@@ -12,28 +12,31 @@
             <h1>Quiz Time!</h1>
             <p>Test your knowledge with these fun questions</p>
             <button id="start-btn">Start Quiz</button>
-        </div>
+        </div><!--div class="screen active"-->
 
-        <div class="quiz-header">
-            <h2 id="queation-text">Question goes here</h2>
-            <div class="quiz-info">
-                <p>
-                    Question <span id="current-question">1</span> of <span>5</span>
-                </p>
-                <p>
-                    Score: <span id="score">0</span>
-                </p>
-            </div>
+        <div class="screen" id="quiz-scren">
+            <div class="quiz-header">
+                <h2 id="question-text">Question goes here</h2>
+                <div class="quiz-info">
+                    <p>Question <span id="current-question">1</span> of <span>5</span></p>
+                    <p>Score: <span id="score">0</span></p>
+                </div><!--div class="quiz-info"-->
+                <div id="answers-container" class="answers-container"></div>
+                <div class="progress-bar">
+                    <div id="progress" class="progress"></div>
+                </div><!--div class="progress-bar"-->
+            </div><!--div class="quiz-header"-->
+        </div><!--div id="quiz-scren"-->
 
-            <div id="answers-container" class="answers-container">
+        <div id="result-screen" class="screen">
+            <h1>Quiz Result</h1>
+            <div class="result-info">
+                <p>You scored <span id="final-score">0</span> out of <span id="max-score">5</span></p>
+                <div id="result-message">God Job!</div>
+            </div><!--div class="result-info"-->
+            <button id="restart-btn">Restart Quiz</button>
+        </div><!--id="result-screen"-->
 
-            </div>
-
-            <div class="progress-bar">
-                <div id="progress" class="progress"></div>
-
-            </div>
-        </div>
-    </div>
+    </div><!--div class="container"-->
 </body>
 </html>
